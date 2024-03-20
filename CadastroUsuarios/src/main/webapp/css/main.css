@@ -1,0 +1,30 @@
+/* Estilos para o formulário */
+form {
+    margin: 20px;
+}
+
+/* Estilos para o container dos campos de entrada e botão */
+.panelGrid {
+    display: flex;
+    flex-direction: row; /* Direção da linha */
+    align-items: center; /* Alinhamento vertical */
+}
+
+/* Estilos para os campos de entrada */
+input[type="text"] {
+    flex-grow: 1; /* Ocupa todo o espaço disponível */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 10px; /* Margem à direita para separar o botão */
+}
+
+/* Estilos para o botão */
+input[type="submit"] {
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
