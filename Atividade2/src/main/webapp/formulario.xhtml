@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Atividade2</title>
+    <link rel="stylesheet" type="text/css" href="/Atividade2/css/main.css"/>
+    <style>
+        .input-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .input-container label {
+            width: 120px; /* Largura fixa para os rótulos */
+            text-align: right; /* Alinhamento do texto à direita */
+            margin-right: 10px; /* Espaçamento entre o rótulo e o campo de entrada */
+        }
+    </style>
+</head>
+<body>
+<h2>Fale conosco:</h2>
+<div id="content">
+    <h:form>
+        <div class="input-container">
+            <label for="nome">Nome:</label>
+            <h:inputText id="nome" value="#{h.nome}" placeholder="Nome" styleClass="input-style"/>
+        </div>
+        <div class="input-container">
+            <label for="sobrenome">Sobrenome:</label>
+            <h:inputText id="sobrenome" value="#{h.sobrenome}" placeholder="Sobrenome"
+                         styleClass="input-style"/>
+        </div>
+        <div class="input-container">
+            <label for="telefone">Telefone:</label>
+            <h:inputText id="telefone" value="#{h.telefone}" placeholder="Telefone" styleClass="input-style"/>
+        </div>
+        <div class="input-container">
+            <label for="email">E-mail:</label>
+            <h:inputText id="email" value="#{h.email}" placeholder="E-mail" styleClass="input-style"/>
+        </div>
+        <div class="button-container">
+            <h:commandButton value="Enviar"/>
+        </div>
+    </h:form>
+</div>
+
+</body>
+</html>

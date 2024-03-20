@@ -1,0 +1,46 @@
+@charset "ISO-8859-1";
+
+.input-style {
+    width: 200px; /* Largura desejada */
+    height: 30px; /* Altura desejada */
+    padding: 5px; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda */
+    border-radius: 5px; /* Borda arredondada */
+    font-size: 14px; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
+    background-color: #fff; /* Cor de fundo */
+    box-sizing: border-box; /* Inclui padding e borda na largura e altura */
+}
+
+/* Estilização ao focar */
+.input-style:focus {
+    border-color: #007bff; /* Cor da borda ao focar */
+    outline: none; /* Remove a borda de foco padrão */
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25); /* Sombra ao focar */
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+h2 {
+    text-align: center; /* Centraliza o texto */
+    text-transform: uppercase;
+}
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.input-container label {
+    width: 120px; /* Largura fixa para os rótulos */
+    text-align: right; /* Alinhamento do texto à direita */
+    margin-right: 10px; /* Espaçamento entre o rótulo e o campo de entrada */
+}
+
+.button-container {
+    margin-left: 130px; /* Ajusta a margem esquerda para alinhar com os inputs */
+}
